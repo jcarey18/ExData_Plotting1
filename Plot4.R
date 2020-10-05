@@ -28,7 +28,7 @@ with(Data2, {
            ylab="Energy sub metering", xlab="")
             lines(Data2$Sub_metering_2~Data2$Date.Time, col = "red")
             lines(Data2$Sub_metering_3~Data2$Date.Time, col = "blue")
-            legend("topright", lty = 1, col = c("black","red","blue"), 
+            legend("topright", lwd=1, seg.len=2, lty = 1, cex = .8, bty = "n", inset = .12, col = c("black","red","blue"), 
                   legend = c("Sub metering 1", "Sub metering 2", "Sub metering 3"))
       plot(Data2$Date.Time, Data2$Global_reactive_power, type="l", 
             ylab = "Global_reactive_power", xlab = "datetime")
