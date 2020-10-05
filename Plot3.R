@@ -23,11 +23,11 @@ with(Data2, {
            ylab="Energy sub metering", xlab="")
       lines(Data2$Sub_metering_2~Data2$Date.Time, col = "red")
       lines(Data2$Sub_metering_3~Data2$Date.Time, col = "blue")
-      legend("topright", lty = 1, col = c("black","red","blue"), 
-             legend = c("Sub metering 1", "Sub metering 2", "Sub metering 3"))
+      legend("topright", lwd=1, seg.len=2, lty = 1, cex = .8, bty = "n", inset = .10, col = c("black","red","blue"), 
+             legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 })
 
 
 ##Save plot as PNG
-dev.copy(png, file = "Plot3.png")
+dev.copy(png, file = "Plot3.png", width = 480, height = 480)
 dev.off()
